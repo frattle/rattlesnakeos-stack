@@ -371,8 +371,8 @@ fastboot erase avb_custom_key
 ## Build from Source
  * To compile from source you'll need to install Go (https://golang.org/) for your platform
   ```sh
-  go get github.com/dan-v/rattlesnakeos-stack
-  cd $GOPATH/src/github.com/dan-v/rattlesnakeos-stack/
+  go get github.com/frattle/rattlesnakeos-stack
+  cd $GOPATH/src/github.com/frattle/rattlesnakeos-stack/
   make tools
   make
   ```
