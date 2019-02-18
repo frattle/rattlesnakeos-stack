@@ -126,7 +126,7 @@ get_latest_versions() {
   sudo apt-get -y install jq
 
   # check if running latest stack
-  LATEST_STACK_VERSION=$(curl --fail -s "$STACK_URL_LATEST" | jq -r '.name')
+  LATEST_STACK_VERSION="9.0.24"
   if [ -z "$LATEST_STACK_VERSION" ]; then
     aws_notify_simple "ERROR: Unable to get latest rattlesnakeos-stack version details. Stopping build."
     exit 1
